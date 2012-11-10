@@ -11,7 +11,7 @@
   //where the quiz picture files are stored under /quizzy/$quizFolder
   //by default, it looks in the same folder as the quizzes. this might get
   //messy with a large number of quizzes so the option to move it out is given here
-  $picFolder = '.';
+  $picFolder = 'img';
   
   //the dimensions of the quiz in pixels
   $quizWidth = 200;

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quizzes>
+  <quiz>
+    <title>About me</title>
+    <description>
+      <text>Introduction of myself</text>
+      <img src="a.png" alt="a" />
+    </description>
+    <grading>
+      <range start="0" end="50">
+        <grade>B</grade>
+        <rank>Rank</rank>
+        <img src="b.png" alt="b" />
+      </range>
+      <range start="50" end="100">
+        <grade>A</grade>
+        <rank>Rank</rank>>
+        <img src="a.png" alt="a" />
+      </range>
+    </grading>
+    <question>
+      <text>What sports do I like ?</text>
+        <img src="b.png" alt="a" />
+      <option>
+        <text>Basketball</text>
+        <score>15</score>
+        <explanation>
+          <text>Yes, I love.</text>
+        <img src="a.png" alt="a" />
+        </explanation>
+      </option>
+      <option>
+        <text>Baseball</text>
+        <score>0</score>
+        <explanation>
+          <text>Never.</text>
+        </explanation>
+      </option>
+      <option>
+        <text>Soccor</text>
+        <score>0</score>
+        <explanation>
+          <text>Never.</text>
+        </explanation>
+      </option>
+    </question><question>
+      <text>What food do I like ?</text>
+      <option>
+        <text>Rice</text>
+        <score>10</score>
+        <explanation>
+          <text>Not bad</text>
+        </explanation>
+      </option>
+      <option>
+        <text>Beef</text>
+        <score>30</score>
+        <explanation>
+          <text>I love.</text>
+        </explanation>
+      </option>
+      <option>
+        <text>Fish</text>
+        <score>15</score>
+        <explanation>
+          <text>So-so</text>
+        </explanation>
+      </option>
+    </question>
+  </quiz>
+  
+  <quiz>
+    <title>Dummy</title>
+    <description>
+      <text>This is dummy quiz. Description do not shown when option is single.</text>
+    </description>
+  </quiz>
+</quizzes>
