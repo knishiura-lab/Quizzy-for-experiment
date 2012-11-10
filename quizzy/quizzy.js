@@ -8,7 +8,7 @@ var score = 0;
 
 //this is set by jquery when the user clicks on one of the radio buttons
 var selOpt = 0;
-//these are set when the explantion data is dropped into its div
+//these are set when the explanation data is dropped into its div
 var correctOpt = -1;
 var addScore = 0;
 var bestScore = 0;
@@ -135,7 +135,7 @@ function requestNextQuestion()
 		//set necessary styles
 		$('.quizzy_q').width(quizWidth);
 		
-		//dump the recieved data into the correct question div
+		//dump the received data into the correct question div
 		$("#quizzy_q" + curQuestion).html(data);
 	
 		//hide and disable the check and next buttons, the explanation div, and the value spans
