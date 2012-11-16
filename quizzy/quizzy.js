@@ -1,4 +1,7 @@
 //NOTE: QuizzyConfig.js MUST be included BEFORE this file!
+var fadeSpeed;
+var slideSpeed;
+var animateStyle;
 
 //current quiz state
 var quizFile = "";
@@ -38,7 +41,7 @@ $(document).ready(function() {
 	selOpt = 0;
 	correctOpt = -1;
 	addScore = 0;
-	
+
 	// 読み込みメッセージの表示
 	//put up a loading message
 	$('#quizzy').loading(true);
