@@ -109,8 +109,8 @@ function startQuiz()
 		return;
 		
 	// このボタンに現在登録されているクリックイベントを解除する
-	//unbind the click events for this button
-	$(this).unbind();
+	//off the click events for this button
+	$(this).off();
 	
 	// グローバル変数は，ユーザがラジオボタンをクリックした際に適切に設定されている
 	//globals were already set when the user clicked on the radio buttons
@@ -213,7 +213,7 @@ function requestNextQuestion()
 		$('#quizzy_q' + curQuestion + '_foot_chk').click(checkQuestion);
 		$('#quizzy_q' + curQuestion + '_foot_nxt').click(function (){
 			$('#quizzy').loading(true);   
-			$(this).unbind();
+			$(this).off();
 			requestNextQuestion();
 		});
 		
@@ -245,8 +245,8 @@ function checkQuestion()
 		return;
 	
 	// クリックイベントを解除
-	//unbind the click event
-	$(this).unbind();
+	//off the click event
+	$(this).off();
 	
 	// ボタンを隠す
 	//hide the button
