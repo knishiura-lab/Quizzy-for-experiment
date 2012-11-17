@@ -61,7 +61,7 @@ $(document).ready(function() {
 			//the user clicked on one of the options
 		  // IDの取得
 			//get the id
-			var thisId = $(this).attr('id');
+			var thisId = $this.attr('id');
 			
 			// IDからそのインデックスを習得(計算)し，selOpt変数にインデックスを代入
 			//hack out the index and set selOpt to it
@@ -79,7 +79,7 @@ $(document).ready(function() {
       //the user clicked on one of the options
       // IDの取得
       //get the id
-			var thisId = $(this).attr('id');
+			var thisId = $this.attr('id');
 
       // IDからそのインデックスを習得(計算)し，selOpt変数にインデックスを代入
 			//hack out the index and set selOpt to it
@@ -110,7 +110,7 @@ function startQuiz()
 		
 	// このボタンに現在登録されているクリックイベントを解除する
 	//unbind the click events for this button
-	$(this).unbind();
+	$this.unbind();
 	
 	// グローバル変数は，ユーザがラジオボタンをクリックした際に適切に設定されている
 	//globals were already set when the user clicked on the radio buttons
@@ -155,7 +155,7 @@ function startQuiz()
 function requestNextQuestion()
 {		
 	$('#quizzy_q' + curQuestion + '_foot_nxt').fadeOut(fadeSpeed, function() {
-		$(this).attr('disabled', true);
+		$this.attr('disabled', true);
 	});
 	
   // GETパラメータは以下の通り:
@@ -197,7 +197,7 @@ function requestNextQuestion()
       //the user clicked on one of the options
       // IDの取得
       //get the id
-			var thisId = $(this).attr('id');
+			var thisId = $this.attr('id');
 
       // IDからそのインデックスを習得(計算)し，selOpt変数にインデックスを代入
 			//hack out the index and set selOpt to it
@@ -213,7 +213,7 @@ function requestNextQuestion()
 		$('#quizzy_q' + curQuestion + '_foot_chk').click(checkQuestion);
 		$('#quizzy_q' + curQuestion + '_foot_nxt').click(function (){
 			$('#quizzy').loading(true);   
-			$(this).unbind();
+			$this.unbind();
 			requestNextQuestion();
 		});
 		
@@ -246,12 +246,12 @@ function checkQuestion()
 	
 	// クリックイベントを解除
 	//unbind the click event
-	$(this).unbind();
+	$this.unbind();
 	
 	// ボタンを隠す
 	//hide the button
 	$('#quizzy_q' + curQuestion + '_foot_chk').fadeOut(fadeSpeed, function() {
-		$(this).attr('disabled', true);
+		$this.attr('disabled', true);
 	});
 	
 	// Throbberを表示
