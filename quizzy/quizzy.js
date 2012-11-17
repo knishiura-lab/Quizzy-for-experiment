@@ -56,7 +56,7 @@ $(document).ready(function() {
 		
 		// ラジオボタンのラベル部分にクリックイベントを追加
 		//add a click event to the radio buttons' label
-		$('.quizzy_quiz_lbl').click(function () {
+		$(',quizzy_quiz_lbl').click(function () {
 		  // ユーザがある選択肢をクリックした場合
 			//the user clicked on one of the options
 		  // IDの取得
