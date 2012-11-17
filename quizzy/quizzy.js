@@ -310,7 +310,7 @@ function checkQuestion()
 			if(optValues[i] > 0 && optValues[i] < bestScore)
 				useClass = 'quizzy_opt_mid';
 			
-			$('#quizzy_q' + curQuestion + '_opt' + i + '_val').html('<span class="' + useClass + '">' + toWrite + '</span>');
+			$('#quizzy_q' + curQuestion + '_opt' + i + '_val').html('<span class='' + useClass + ''>' + toWrite + '</span>');
 		}
 		$('.quizzy_q_opt_val').fadeIn(fadeSpeed);
 		
