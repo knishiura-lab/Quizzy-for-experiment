@@ -381,11 +381,11 @@ function restartQuizzy()
 	
 	// quizzy_q_cを最初までスクロールして戻る
 	//scroll the quizzy_q_c back to the start
-	$('#quizzy_q_c').animate({left: "0px"}, firstRatio * restartSpeed, animateStyle, function(){
+	$('#quizzy_q_c').animate({left: 0px}, firstRatio * restartSpeed, animateStyle, function(){
 		
 	  // quizzy_cを最初まで戻る
 		//scroll the quizzy_c back to the start
-		$('#quizzy_c').animate({left: "0px"}, secondRatio * restartSpeed, animateStyle, function(){
+		$('#quizzy_c').animate({left: 0px}, secondRatio * restartSpeed, animateStyle, function(){
 
 		  // サブミットボタンのクリックイベントを元に戻す
 			//reset the click event on the submit button
