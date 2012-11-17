@@ -285,8 +285,8 @@ function checkQuestion()
 		// 現在の問題が部分点方式かどうかのフラグをセット
 		//determine if this question has partial credit
 		var partialCredit = false;
-		for(var i in optValues)
-			if(optValues[i] != 0 && optValues[i] != bestScore)
+		for(var i in optValues) {
+			if(optValues[i] != 0 and optValues[i] != bestScore)
 				partialCredit = true;
 			
 		// 値を表示する
