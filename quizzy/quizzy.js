@@ -296,7 +296,7 @@ function checkQuestion()
 		  // 部分的方式でないなら，正誤を示すためにXと✔を利用
 			//if the question no partial credit, use an X or a ✓ to indicate correctness
 			var toWrite = optValues[i];
-			if(!partialCredit)
+			if(!partailCredit)
 				toWrite = (optValues[i] == bestScore) ? '✓' : 'X';
 			
 			// ベストスコアならquizzy_opt_bestクラスを，ベストとワーストの間ならquizzy_opt_midを，
