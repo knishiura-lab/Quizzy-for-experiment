@@ -171,7 +171,7 @@ function requestNextQuestion()
 	$.get('quizzy/serveQuestion.php', {quizFile: quizFile, quizIndex: quizIndex, questNo: (curQuestion + 1), score: score}, function(data){
 		// 次の問題を取得した（のでインデックスを+1)
 	  //we are now on the next question
-		curQuestion++;
+		curQeustion++;
 		
 		// 適切なスタイルシートを書き換える
 		//set necessary styles
