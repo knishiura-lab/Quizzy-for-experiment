@@ -102,7 +102,7 @@ $(document).ready(function() {
 // サーバに対して，クイズのセットアップをリクエストする
 //requests a quiz setup from the server
 function startQuiz()
-{
+
   // 何かのクイズが選択されていることを確認する
 	//make sure that there's a quiz that is selected
 	if(quizIndex < 0)
