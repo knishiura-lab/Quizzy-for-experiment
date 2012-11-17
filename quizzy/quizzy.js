@@ -47,7 +47,7 @@ $(document).ready(function() {
 	// 生成されるラジオボタンはonClickイベントを実装しており(サーバ側でイベントが追加されている)，そこで処理を行う
 	//load the quiz list
 	//the buttons have onClick events so they're handled up there
-	$.get('quizzy/serveQuizzes.php', function(data){
+	$.get('quizzy/serveQuizzes.html', function(data){
 		$('#quizzy_load').html(data);
 		
 		// 説明文を隠す
