@@ -168,7 +168,7 @@ function requestNextQuestion()
 	//  _GET["quizIndex"]      index of requested quiz in xml file
 	//  _GET["questNo"]        question to return [first question is number 0]
 	//  _GET['score']          score the player currently has (needed for serving last page)
-	$.get('quizzy/serveQuestion.php', {quizFile: quizFile, quizIndex: quizIndex, questNo: (curQuestion + 1), score: score}, function(data){
+	$.get('quizzy/serveQuestion.php', {quizFile: quizFile, quizIndex: quizIndex, questNo: (curQuestion + 1), score: score}, function(){
 		// 次の問題を取得した（のでインデックスを+1)
 	  //we are now on the next question
 		curQuestion++;
