@@ -129,7 +129,10 @@ function startQuiz()
 	//parameters passed in GET:
 	//  _GET['quizFile']       xml file to open
 	//  _GET['quizIndex']      index of requested quiz in xml file
-	$.get('quizzy/serveQuiz.php', {quizFile: quizFile, quizIndex: quizIndex}, function(data){
+	$.get('quizzy/serveQuiz.php', {
+		quizFile: quizFile
+		quizIndex: quizIndex
+	}, function(data){
 		// Throbberの表示
 	  //put up throbber
 		$('#quizzy').loading(true);
