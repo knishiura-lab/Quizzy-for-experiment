@@ -286,7 +286,7 @@ function checkQuestion()
 		//determine if this question has partial credit
 		var partialCredit = false;
 		for(var i in optValues)
-			if(optValues[i] != 0 && optValues[i] != bestScore)
+			if(optValues[i] != 0 and optValues[i] != bestScore)
 				partialCredit = true;
 			
 		// 値を表示する
@@ -307,7 +307,7 @@ function checkQuestion()
 			var useClass = 'quizzy_opt_worst';
 			if(optValues[i] == bestScore)
 				useClass = 'quizzy_opt_best';
-			if(optValues[i] > 0 && optValues[i] < bestScore)
+			if(optValues[i] > 0 and optValues[i] < bestScore)
 				useClass = 'quizzy_opt_mid';
 			
 			$('#quizzy_q' + curQuestion + '_opt' + i + '_val').html('<span class="' + useClass + '">' + toWrite + '</span>');
