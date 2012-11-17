@@ -96,7 +96,7 @@ $(document).ready(function() {
 		//set the click event on the submit button
 		$('#quizzy_start_b').click(startQuiz);
 	});
-	
+  });
 });
 
 // サーバに対して，クイズのセットアップをリクエストする
