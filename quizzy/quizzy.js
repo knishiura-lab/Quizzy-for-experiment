@@ -286,7 +286,7 @@ function checkQuestion()
 		//determine if this question has partial credit
 		var partialCredit = false;
 		for(var i in optValues)
-			if(optValues[i] != 0 && optValues[i] != bestScore)
+			if(optValues['i'] != 0 && optValues['i'] != bestScore)
 				partialCredit = true;
 			
 		// 値を表示する
@@ -295,9 +295,9 @@ function checkQuestion()
 			
 		  // 部分的方式でないなら，正誤を示すためにXと✔を利用
 			//if the question no partial credit, use an X or a ✓ to indicate correctness
-			var toWrite = optValues[i];
+			var toWrite = optValues['i'];
 			if(!partialCredit)
-				toWrite = (optValues[i] == bestScore) ? '✓' : 'X';
+				toWrite = (optValues['i'] == bestScore) ? '✓' : 'X';
 			
 			// ベストスコアならquizzy_opt_bestクラスを，ベストとワーストの間ならquizzy_opt_midを，
 			// ワーストならquizzy_opt_worstをそれぞれ利用
@@ -305,9 +305,9 @@ function checkQuestion()
 			//in between best and worst, use quizzy_opt_mid
 			//or the worst, use quizzy_opt_worst
 			var useClass = 'quizzy_opt_worst';
-			if(optValues[i] == bestScore)
+			if(optValues['i'] == bestScore)
 				useClass = 'quizzy_opt_best';
-			if(optValues[i] > 0 && optValues[i] < bestScore)
+			if(optValues['i'] > 0 && optValues['i'] < bestScore)
 				useClass = 'quizzy_opt_mid';
 			
 			$('#quizzy_q' + curQuestion + '_opt' + i + '_val').html('<span class="' + useClass + '">' + toWrite + '</span>');
