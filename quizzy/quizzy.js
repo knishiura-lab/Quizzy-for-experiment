@@ -319,8 +319,8 @@ function checkQuestion()
 		setTimeout(function() {
 		  // 選択された答えと，最善の答え以外をスクロールアップする
 			//scroll up all but the selected answer and the best answer
-			var correctSel = '[id!=quizzy_q' + curQuestion + '_opt' + correctOpt + ']';
-			var pickedSel = '[id!=quizzy_q' + curQuestion + '_opt' + selOpt + ']';
+			var correctSel = '[#!=quizzy_q' + curQuestion + '_opt' + correctOpt + ']';
+			var pickedSel = '[#!=quizzy_q' + curQuestion + '_opt' + selOpt + ']';
 			if(addScore == bestScore)
 				correctSel = '';
 			$('.quizzy_q_opt' + correctSel + pickedSel).slideUp(slideSpeed);
