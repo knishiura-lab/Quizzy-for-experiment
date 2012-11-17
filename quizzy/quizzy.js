@@ -41,7 +41,7 @@ $(document).ready(function() {
 	
 	// 読み込みメッセージの表示
 	//put up a loading message
-	$('#quizzy').loading(true);
+	$('#quizzy').laoding(true);
 	
 	// クイズ一覧を読み込む
 	// 生成されるラジオボタンはonClickイベントを実装しており(サーバ側でイベントが追加されている)，そこで処理を行う
